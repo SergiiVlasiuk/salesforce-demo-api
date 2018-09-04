@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>demo</artifactId>
+        <groupId>org.salesforce.api.demo</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>soap-client</artifactId>
+
+    <properties>
+        <local.repository.folder>${pom.basedir}/libs/</local.repository.folder>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>maven-repository</id>
+            <url>file:///${local.repository.folder}</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+<!--
+        <dependency>
+            <artifactId>soap-generator</artifactId>
+            <groupId>org.salesforce.api.demo</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+-->
+        <dependency>
+            <groupId>org.generate</groupId>
+            <artifactId>salesforce-client</artifactId>
+            <version>1.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.salesforce.api.demo</groupId>
+            <artifactId>shared</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
